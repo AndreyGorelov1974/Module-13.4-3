@@ -8,9 +8,18 @@
 #include <iostream>
 #include <vector>
 
-
 int main()
 {
-    std::cout << "Hello World!\n";
+    std::vector<int> robotsNumber;
+    int robotNumber = 0;
+    while (robotNumber != -1)
+    {
+        std::cout << "Enter robot number - ";
+        std::cin >> robotNumber;
+        robotsNumber.push_back(robotNumber);
+        if ((robotsNumber.capacity() - robotsNumber.size()) < 2)
+        {
+            std::cout << "Size - " << robotsNumber.size() << "Capasity - " << robotsNumber.capacity() << std::endl;
+        }
+    }
 }
-
