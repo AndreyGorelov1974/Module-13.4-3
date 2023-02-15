@@ -6,6 +6,8 @@
 Последний робот будет иметь номер -1.*/
 
 #include <iostream>
+#include <vector>
+
 
 int main()
 {
